@@ -23,8 +23,11 @@ body{
     padding-top:25px;
     box-shadow: -2px 0px 10px black;
     border-radius: 5px;;
+    background-color: #0ea5e9;
+    color:White;
 
 }
+
 
 
 .selection{
@@ -65,12 +68,14 @@ body{
 }
 
 .header{
+    grid-column-start: 2;
+    grid-row-start: 1;
     padding:30px;
     padding-left:40px;
     padding-right:40px;
     display:flex;
     align-items: flex-start;
-    gap:0rem;  
+    gap:33rem;  
 }
 
 input{
@@ -83,17 +88,122 @@ input{
     background-color: rgba(76, 91, 158, 0.15);
     border-radius: 25px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.158);
+    transition: 0.2s ease-in-out;
 }
 
 .search{
     display:flex;
     align-content: center;
     gap:10px;
-}
-
-.navbar{
-    background-color: #0ea5e9;
-    color:White;
+    justify-content: center;
     
 }
 
+input:hover{
+    box-shadow: 0px 0px 3px #0ea5e9;
+}
+
+.userphoto{
+    width:28px;
+    height:28px;
+    border-radius: 25px;
+    transition:0.1s ease-in-out;
+    
+}
+
+.userinfo{
+    display:flex;
+    align-items:center;
+    height:30px;
+    gap:1rem;
+    user-select: none;
+    
+}
+
+.userphoto:hover{
+    box-shadow: 0px 0px 3px #0ea5e9;
+    cursor:pointer;
+}
+
+.user{
+    transition:0.2s ease-in-out;
+    cursor:pointer;
+}
+
+.name{
+    transition:0.2s ease-in-out;
+    cursor:pointer;
+}
+
+.user:hover{
+    color:#0ea5e9;
+}
+
+.name:hover{
+    text-shadow: 0px 0px 1px #0ea5e9;
+}
+
+.secondheader{
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    display:flex;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.anotherphoto{
+    width:60px;
+    height:60px;
+    border-radius: 25px;
+    transition:0.2s ease-in-out;
+}
+
+.text{
+    padding:0px;
+    padding-left:10px;
+    margin:0px;
+    margin-top:-10px;
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+.text h4{
+    font-size:24px;
+    margin-top:-20px;
+}
+
+.cover{
+    box-shadow: 0 8px 3px -2px rgba(0, 0, 0, 0.185);
+    height:fit-content;
+    
+}
+
+.wrap{
+    display:flex;
+    margin:25px;
+    font-size:18px;
+    gap:2rem;
+    margin-left:auto;
+}
+
+.but{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0ea5e9;
+    width:100px;
+    height:50px;
+    border-radius: 25px;
+    color:white;
+    user-select: none;
+    cursor: pointer;
+    transition:0.3s ease-in-out;
+}
+
+.but:hover{
+    color:rgba(0, 0, 0, 0.479);
+    background-color:#0d91ce25;
+}
