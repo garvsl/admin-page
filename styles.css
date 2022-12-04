@@ -8,16 +8,13 @@ body{
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
-    width:100vw;
-    height:100vh;
+
 }
 
 .container{
     display:grid;
     grid-template-columns: minmax(300px, 1fr) 5fr;
     grid-template-rows: 1fr 5fr;
-    background-color:
-    
 }
 
 .navbar{
@@ -217,10 +214,11 @@ input:hover{
 
 .wrap{
     display:flex;
-    margin-top:14px;
+    margin-top:10px;
     font-size:18px;
     gap:2rem;
     margin-left:auto;
+
 }
 
 .but{
@@ -252,12 +250,9 @@ input:hover{
 }
 
 .body{
-    z-index: -1;
-
-    margin-top:-10px;
-
     grid-column: 2/3;
     grid-row: 2/3;
+    margin-top:-10px;
 
     display:grid;
     grid-template-columns: 1fr 0.4fr;
@@ -280,7 +275,7 @@ input:hover{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size:1.2rem;
-    margin-bottom:-10px;
+    margin-bottom:-5px;
     padding-left:5px;
     
 }
@@ -292,7 +287,7 @@ input:hover{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size:1.2rem;
-    margin-bottom:-10px;
+    margin-bottom:-15px;
     padding-left:5px;
     
 }
@@ -317,7 +312,19 @@ input:hover{
     padding:20px;
     padding-top:25px;
     padding-bottom: 25px;
+
 }
+
+.colhover{
+    transition:0.2s ease-in-out;
+    cursor:pointer;
+
+}
+
+.colhover:hover{
+    color:var(--background)
+}
+
 
 .announce{
     grid-row-start: 2;
@@ -337,8 +344,51 @@ input:hover{
 .announcesquare{
     background-color: white;
     border-radius: 8px;
-    padding:15px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);   
+    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+    border:3px solid var(--background);
+    
+}
+
+.announcement{
+    border-bottom:1px solid rgba(56, 56, 56, 0.315);
+
+    padding:10px;
+    transition:0.2s ease-in-out;
+    cursor:pointer;
+
+    
+
+}
+
+.announcement:hover{
+    color:var(--background)
+    
+}
+
+.announcesquare .announcement:last-child{
+
+    border:none;
+
+}
+
+.announcement h5{
+    font-weight: 500;
+    font-size:0.9rem;
+    padding:0;
+    margin:0;
+}
+
+.announcement p{
+    font-weight:300;
+    margin-top:5px;
+    font-size:0.8rem;
+    display:inline-block;
+    width:100%;
+    text-overflow: ellipsis;
 }
 
 .square h4, .square p{
@@ -361,6 +411,24 @@ input:hover{
     gap:15px;
     margin-top:50px;
 }
+
+
+
+.react{
+    transition:0.2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+}
+.react:hover{
+    color:var(--background);
+}
+
+
+
+p{
+    color:rgb(56, 56, 56);
+}
+
 
 
 
