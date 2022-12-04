@@ -2,6 +2,7 @@
 
 *{
     --background: #0ea5e9;
+    --textcolor: rgb(56, 56, 56);
 }
 
 body{
@@ -190,7 +191,7 @@ input:hover{
 }
 
 .text h4{
-    font-size:24px;
+    font-size:1.5rem;
     margin-top:-24px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -215,7 +216,7 @@ input:hover{
 .wrap{
     display:flex;
     margin-top:10px;
-    font-size:18px;
+    font-size:1.1rem;
     gap:2rem;
     margin-left:auto;
 
@@ -309,9 +310,7 @@ input:hover{
     border-radius: 8px;
     border-left: 7px solid rgb(255, 189, 67);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
-    padding:20px;
-    padding-top:25px;
-    padding-bottom: 25px;
+    padding:25px;
 
 }
 
@@ -348,6 +347,7 @@ input:hover{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
     display:flex;
     flex-direction:column;
+    justify-content: space-between;
     padding:10px;
     border:3px solid var(--background);
     
@@ -409,7 +409,7 @@ input:hover{
     display:flex;
     justify-content: flex-end;
     gap:15px;
-    margin-top:50px;
+    margin-top:80px;
 }
 
 
@@ -426,9 +426,52 @@ input:hover{
 
 
 p{
-    color:rgb(56, 56, 56);
+    color:var(--textcolor);
 }
 
+.people{
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+    height:100%;
+    justify-content: space-between;
+
+}
+
+.person{
+    display:flex;
+    align-items: center;
+    align-content: center;
+}
+
+.thename{
+    display:flex;
+    flex-direction: column;
+    padding-left:5px;
+    margin-top:-10px;
+}
+
+.thename h4:nth-child(1){
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    font-size:1rem;
+    font-weight:400;
+}
+
+.thename h5{
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+    margin-top:5px;
+    font-size:1rem;
+    font-weight:300;
+    color:var(--textcolor)
+}
+
+.people img{
+    width:65px;
+    height:65px;    
+}
 
 
 
