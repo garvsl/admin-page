@@ -682,12 +682,14 @@ p{
         }
 
         .container{
-            grid-template-rows: 0.3fr 5fr;
+            grid-template-rows: 0.25fr 5fr;
         }
         
         .wrap{
             
             gap:10px;
+            padding-left:10px;
+            padding-right:10px;
         }
 
         .secondheader{
@@ -712,9 +714,20 @@ p{
 
     }
 
-    @media screen and (max-width: 395px) {
+    @media screen and (max-width: 455px) {
         .search{
             display:none;
+        }
+
+        .header{
+            justify-content: center;
+        }
+
+        .userinfo{
+            width:fit-content;
+            margin:0;
+            margin-left:-30px;
+            padding:0;
         }
     }
 
